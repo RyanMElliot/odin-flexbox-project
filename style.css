@@ -12,7 +12,7 @@ body {
     background-color: #1F2937;
     color: #E5E7EB;
     font-size: 18px;
-    padding: 0px 80px
+    padding: 8px 10%
 }
 
 .header {
@@ -44,7 +44,7 @@ body {
 }
 
 .main {
-    padding: 40px 80px;
+    padding: 20px 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,21 +61,28 @@ body {
     align-items: center;
 }
 
-.quote-pane{
-    background-color: #E5E7EB;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.hero .photobox {
+    width: 400px;
+    height: 250px;
+}
+
+.photobox img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
 }
 
 .container{
     display: flex;
     justify-content: center;
     gap: 36px;
+    align-items: flex-start;
 }
 
 .item {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .item .photobox {
@@ -83,6 +90,14 @@ body {
     width: 100px;
     border-radius: 10px;
     border: 5px solid #3882F6;
+}
+
+.item .photobox img {
+    border-radius: 4px;
+}
+
+.item .text {
+    text-align: center;
 }
 
 button {
@@ -112,14 +127,25 @@ button {
     border-color: #E5E7EB;
 }
 
+.quote-pane{
+    background-color: #E5E7EB;
+    display: flex;
+    font-size: 24px;
+    flex-direction: column;
+    align-items: center;
+}
+
 .quote {
     font-style: italic;
-    font-size: 24px;
     text-align: left;
 }
 
-.big-text,
 .author {
+    font-weight: 600;
+    align-self: flex-end;
+}
+
+.big-text {
     font-weight: 800;
     font-size: 24px;
 }
